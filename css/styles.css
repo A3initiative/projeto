@@ -1,0 +1,25 @@
+h1 {
+  display: none;
+}
+
+img {
+  width: 2.5em;
+}
+
+#formAcesso {
+  border: 1px solid #216096;
+  padding: 2em;
+  border-radius: 1em;
+}
+
+#botaoAcesso {
+  background-color: #216096;
+  border: 1px solid #216096;
+}
+
+#footerAcesso {
+  background-color: #216096;
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+}
