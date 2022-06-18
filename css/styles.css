@@ -2,8 +2,36 @@ h1 {
   display: none;
 }
 
+#styleh2 {
+  font-size: 1.5em;
+}
+
 img {
   width: 2.5em;
+}
+
+form {
+  margin-bottom: 2em;
+}
+
+.container {
+  box-shadow: 10px 10px 5px -1px rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: 10px 10px 5px -1px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 10px 10px 5px -1px rgba(0, 0, 0, 0.37);
+}
+
+#funcaoManterEncomenda {
+  background-color: #216096;
+  border: 1px solid #216096;
+}
+
+.funcoesManterEncomenda {
+  color: #216096;
+  border: 1px solid #216096;
+}
+
+#formManterEncomenda {
+  margin-bottom: 2em;
 }
 
 #formAcesso {
@@ -15,6 +43,22 @@ img {
 #botaoAcesso {
   background-color: #216096;
   border: 1px solid #216096;
+}
+
+.centralizado {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+header {
+  text-align: center;
+  justify-content: center;
+}
+
+#headerAcesso {
+  text-align: center;
+  justify-content: center;
 }
 
 #footerAcesso {
