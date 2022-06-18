@@ -30,6 +30,15 @@ form {
   border: 1px solid #216096;
 }
 
+#cardEncomendasDisponiveis {
+  background-color: #216096;
+  color: #ffffff;
+}
+
+#cardHistoricoEncomendas {
+  color: #000000;
+}
+
 #formManterEncomenda {
   margin-bottom: 2em;
 }
