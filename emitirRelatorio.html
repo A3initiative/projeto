@@ -22,7 +22,8 @@
           alt=""
           class="d-inline-block align-text-top"
         />
-        SisCondo
+        Olá, supervisor(a) [nome do usuário]!
+        <a href="">Sair</a>
       </div>
     </header>
 
@@ -73,7 +74,7 @@
                       <a class="dropdown-item" href="#">Registrar encomenda</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Abandonar encomenda</a>
+                      <a class="dropdown-item" href="#">Alterar encomenda</a>
                     </li>
                   </ul>
                 </li>
@@ -113,35 +114,15 @@
 
           <div class="col-md-3">
             <label for="selectBloco" class="form-label">Período</label>
-            <select id="selectBloco" class="form-select">
-              <option selected>Selecione o período</option>
-              <option>Hoje</option>
-              <option>1 dia útil</option>
-              <option>1 semana</option>
-              <option>1 mês</option>       
-              <option>Listar Todos</option>
-            </select>
-          </div>
-
-          <div class="col-md-3">
-            <label for="selectBloco" class="form-label">Dimensões da encomenda</label>
-            <select id="selectBloco" class="form-select">
-              <option selected>Selecione a dimensão</option>
-              <option>Inferior a 55cm x 35cm x 25cm</option>
-              <option>Inferior a 10 kg</option>     
-              <option>Acima de 55cm x 35cm x 25cm</option>
-              <option>Acima de 10kg</option>        
-              <option>Listar Todos</option>
-            </select>
-          </div>
+            <input type="text" class="form-control" id="exampleFormControlInput1">
+          </div>          
 
           <div class="col-md-3">
             <label for="selectBloco" class="form-label">Prazo de guarda</label>
             <select id="selectBloco" class="form-select">
               <option selected>Selecione o prazo de guarda</option>
-              <option>2 dias úteis</option>
-              <option>5 dias úteis</option>
-              <option>Acima de 5 dias úteis</option>        
+              <option>Prazo de 2 dias úteis expirado</option>
+              <option>Prazo de 5 dias úteis expirado</option>
               <option>Listar Todos</option>
             </select>
           </div>          
@@ -181,8 +162,7 @@
             <div class="card-header" id="cardEncomendasDisponiveis"><strong>Encomendas disponíveis para retirar</strong></div>
             <div class="card-body">
               <h5 class="card-title">Situação: Encomenda na Mensageria disponível para retirar</h5>
-              <p class="card-text">                
-                Dimensão: Inferior a 55cm x 35cm x 25cm<br /> 
+              <p class="card-text">        
                 Apartamento: Bloco 1 - Unidade 101<br />
                 Recebida em: 18/06/2022              
               </p>
@@ -197,8 +177,7 @@
             <div class="card-header bg-light" id="cardHistoricoEncomendas"><strong>Encomendas retiradas</strong></div>
             <div class="card-body">
               <h5 class="card-title">Situação: Encomenda retirada</h5>
-              <p class="card-text">
-                Dimensão: Inferior a 10kg<br />  
+              <p class="card-text"> 
                 Apartamento: Bloco 1 - Unidade 303<br />
                 Retirado por morador(a): Maria<br />
                 Recebida em: 15/06/2022<br />
@@ -211,8 +190,7 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Situação: Encomenda retirada</h5>
-              <p class="card-text">                             
-                Dimensão: Acima de 10kg<br />   
+              <p class="card-text">      
                 Recebida em: 13/06/2022<br />
                 Retirado por morador(a): José<br />
                 Apartamento: Bloco 1 - Unidade 202<br />

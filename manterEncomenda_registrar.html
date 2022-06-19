@@ -22,7 +22,8 @@
           alt=""
           class="d-inline-block align-text-top"
         />
-        SisCondo
+        Olá, supervisor/mensageiro(a) [nome do usuário]!
+        <a href="">Sair</a>
       </div>
     </header>
 
@@ -73,7 +74,7 @@
                       <a class="dropdown-item" href="#">Registrar encomenda</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Abandonar encomenda</a>
+                      <a class="dropdown-item" href="#">Alterar encomenda</a>
                     </li>
                   </ul>
                 </li>
@@ -123,7 +124,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Abandonar</a>
+              <a class="nav-link" href="#">Alterar</a>
             </li>
           </ul>
         </div>
@@ -137,7 +138,7 @@
           </div>
           
           <div class="col-md-3">
-            <label for="selectBloco" class="form-label">Bloco</label>
+            <label for="selectBloco" class="form-label">*Bloco</label>
             <select id="selectBloco" class="form-select">
               <option selected>Selecione o bloco</option>
               <option>Bloco 1</option>
@@ -146,7 +147,16 @@
             </select>
           </div>
           <div class="col-md-3">
-            <label for="selectUnidade" class="form-label">Unidade</label>
+            <label for="selectUnidade" class="form-label">*Andar</label>
+            <select id="selectUnidade" class="form-select">
+              <option selected>Selecione o andar</option>
+              <option>1º andar</option>
+              <option>2º andar</option0>
+              <option>3º andar</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label for="selectUnidade" class="form-label">*Unidade</label>
             <select id="selectUnidade" class="form-select">
               <option selected>Selecione a unidade</option>
               <option>101</option>
@@ -155,8 +165,8 @@
             </select>
           </div>
 
-          <div class="col-md-6">
-            <label for="selectNomeMorador" class="form-label">Morador</label>
+          <div class="col-md-10">
+            <label for="selectNomeMorador" class="form-label">*Morador</label>
             <select id="selectMorador" class="form-select">
               <option selected>Selecione o morador</option>
               <option>Ana</option>
@@ -169,30 +179,12 @@
             </select>
           </div>
 
-          <div class="col-md-6">
-            <label for="selectFornecedor" class="form-label"
-              >Encomenda ultrapassa limite de tamanho ou peso?</label
-            >
-            <br />
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="inlineRadioOptions"
-                id="inlineRadio1"
-                value="option1"
-              />
-              <label class="form-check-label" for="inlineRadio1">Sim</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="inlineRadioOptions"
-                id="inlineRadio2"
-                value="option2"
-              />
-              <label class="form-check-label" for="inlineRadio2">Não</label>
+          <div class="col-md-6">            
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Encomenda ultrapassa limite de tamanho ou peso
+              </label>
             </div>
           </div>
 
@@ -206,7 +198,7 @@
           </div>
 
           <div id="helpCampos" class="form-text">
-            Todos os campos são de preenchimento obrigatório.
+            Os campos com * são de preenchimento obrigatório.
           </div>
 
           <div class="col-12">
