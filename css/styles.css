@@ -76,3 +76,8 @@ header {
   text-align: center;
   justify-content: center;
 }
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
