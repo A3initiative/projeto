@@ -142,16 +142,16 @@
         <br /><br />
 
         <form class="row g-3" id="formManterUsuario">
-          <div class="col-md-4">
+          <div class="col-md-6">
             <label for="selectPerfil" class="form-label">Perfil</label>
             <select id="selectPerfil" class="form-select">
               <option selected>Selecione o perfil</option>
-              <option>Morador(a)</option>
-              <option>Mensageiro(a)</option>
-              <option>Supervisor(a)</option>
+              <option value="Morador(a)">Morador(a)</option>
+              <option value="Mensageiro(a)">Mensageiro(a)</option>
+              <option value="Supervisor(a)">Supervisor(a)</option>
             </select>
           </div>
-          <div class="col-md-10">
+          <div class="col-md-8">
             <label for="inputNomeUsuario" class="form-label"
               >Nome do(a) usuário(a)</label
             >
@@ -161,6 +161,16 @@
               id="inputNomeUsuario"
               aria-describedby="emailHelp"
             />
+          </div>
+          <div class="col-md-2" id="moradorResponsavel">
+            <label for="selectResponsavel" class="form-label"
+              >Morador(a) Responsável</label
+            >
+            <select id="selectResponsavel" class="form-select">
+              <option selected>Selecione</option>
+              <option value="sim">Sim</option>
+              <option value="nao">Não</option>
+            </select>
           </div>
           <div class="col-md-3">
             <label for="inputTelefoneUsuario" class="form-label"
@@ -174,12 +184,12 @@
             />
           </div>
           <div class="col-md-4">
-            <label for="inputEmailMorador" class="form-label">E-mail</label>
+            <label for="inputEmailUsuario" class="form-label">E-mail</label>
             <input
               type="email"
               class="form-control"
               id="inputEmailUsuario"
-              aria-describedby="contatoHelp"
+              aria-describedby="emailHelp"
             />
           </div>
           <div class="col-md-3">
