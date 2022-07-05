@@ -83,67 +83,70 @@
         <h1>SisCondo</h1>
         <h2 id="styleh2">Consultar Encomenda | Morador</h2>
 
+        <br>
+
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Disponíveis</button>
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Retiradas</button>
+            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Todas</button>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+              <div class="card">
+                <div class="card-header" id="cardEncomendasDisponiveis"><strong>Encomendas disponíveis para retirar</strong></div>
+                <div class="card-body">
+                  <h5 class="card-title">Encomenda 002</h5>
+                  <p class="card-text">
+                    Recebida em: 21/06/2022<br />                
+                  </p>
+                  <a href="#" class="btn btn-primary">Mais informações</a>
+                </div>
+              </div>
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+
+            <div class="card">
+              <div class="card-header" id="cardEncomendasDisponiveis"><strong>Encomendas retiradas</strong></div>
+              <div class="card-body">
+                <h5 class="card-title">Encomenda 001</h5>
+                <p class="card-text">
+                  Recebida em: 18/06/2022<br />
+                  Retirada em: 19/06/2022<br />                 
+                </p>
+                <a href="#" class="btn btn-primary">Mais informações</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+
+            <div class="card">
+              <div class="card-header" id="cardEncomendasDisponiveis"><strong>Todas encomendas registradas</strong></div>
+              <div class="card-body">
+                <h5 class="card-title">Encomenda 002</h5>
+                <p class="card-text">
+                  Recebida em: 21/06/2022<br />                
+                </p>
+                <a href="#" class="btn btn-primary">Mais informações</a>
+              </div>
+              <hr>
+              <div class="card-body">
+                <h5 class="card-title">Encomenda 001</h5>
+                <p class="card-text">
+                  Recebida em: 18/06/2022<br /> 
+                  Retirada em: 19/06/2022<br />                
+                </p>
+                <a href="#" class="btn btn-primary">Mais informações</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
         <br />
 
-        <div class="col-md-12">
-          <div class="card">
-            <div class="card-header" id="cardEncomendasDisponiveis"><strong>Encomendas disponíveis para retirar</strong></div>
-            <div class="card-body">
-              <h5 class="card-title">Situação: Encomenda na Mensageria disponível para retirar</h5>
-              <p class="card-text">
-                Recebida em: 18/06/2022<br />                
-              </p>
-              <a href="#" class="btn btn-primary">Mais informações</a>
-            </div>
-          </div>
-
-          <br>
-          
-            <label for="filtros" class="form-label"
-            ><strong>Selecione o período:</strong></label
-          >            
-              <form class="row g-3">             
-                <div class="col-4">
-                  <label for="periodoInicial" class="form-label">Período Inicial</label>
-                  <input class="form-control me-2" type="date" placeholder="Período Inicial" aria-label="Período Inicial">
-                </div>
-                <div class="col-4">                  
-                  <label for="periodoFinal" class="form-label">Período Final</label>
-                  <input class="form-control me-2" type="date" placeholder="Período Final" aria-label="Período Final">
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="btn btn-primary">
-                    Consultar encomenda
-                  </button>
-                  <br /><br />
-                </div>
-              </form>
-
-        <div class="col-md-12">
-          <div class="card">
-            <div class="card-header bg-light" id="cardHistoricoEncomendas"><strong>Histórico de Encomendas</strong></div>
-            <div class="card-body">
-              <h5 class="card-title">Situação: Encomenda retirada</h5>
-              <p class="card-text">
-                Recebida em: 15/06/2022<br />
-                Entregue em: 16/06/2022<br />
-              </p>
-              <a href="#" class="btn btn-primary">Mais informações</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Situação: Encomenda retirada</h5>
-              <p class="card-text">
-                Recebida em: 13/06/2022<br />
-                Entregue em: 13/06/2022<br />
-              </p>
-              <a href="#" class="btn btn-primary">Mais informações</a>
-            </div>
-          </div>
-
-          <br>
         </div>
       </div>
     </main>
