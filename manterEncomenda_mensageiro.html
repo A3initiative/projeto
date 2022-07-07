@@ -129,7 +129,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Abandonar</a>
+              <a class="nav-link" href="#">Alterar</a>
             </li>
           </ul>
         </div>
@@ -137,12 +137,32 @@
         <br /><br />
 
         <form class="row g-3" id="formManterEncomenda">
-          <div class="col-md-12">
-            <label for="filtros" class="form-label"
-              ><strong
-                >Selecione um ou mais filtros para consultar:</strong
-              ></label
-            >
+          <div class="col-md-2">
+            <label for="selectBloco" class="form-label">Bloco</label>
+            <select id="selectBloco" class="form-select">
+              <option selected>Selecione o bloco</option>
+              <option>Bloco 1</option>
+              <option>Bloco 2</option>
+              <option>Bloco 3</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="selectBloco" class="form-label">Bloco</label>
+            <select id="selectBloco" class="form-select">
+              <option selected>Selecione o andar</option>
+              <option>1º andar</option>
+              <option>2º andar</option>
+              <option>3º andar</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="selectUnidade" class="form-label">Unidade</label>
+            <select id="selectUnidade" class="form-select">
+              <option selected>Selecione a unidade</option>
+              <option>Unidade A</option>
+              <option>Unidade B</option>
+              <option>Unidade C</option>
+            </select>
           </div>
           <div class="col-md-6">
             <label for="selectMorador" class="form-label"
@@ -157,24 +177,6 @@
               <option>José</option>
               <option>Maria</option>
               <option>Mauro</option>
-            </select>
-          </div>
-          <div class="col-md-3">
-            <label for="selectBloco" class="form-label">Bloco</label>
-            <select id="selectBloco" class="form-select">
-              <option selected>Selecione o bloco</option>
-              <option>Bloco 1</option>
-              <option>Bloco 2</option>
-              <option>Bloco 3</option>
-            </select>
-          </div>
-          <div class="col-md-3">
-            <label for="selectUnidade" class="form-label">Unidade</label>
-            <select id="selectUnidade" class="form-select">
-              <option selected>Selecione a unidade</option>
-              <option>Unidade A</option>
-              <option>Unidade B</option>
-              <option>Unidade C</option>
             </select>
           </div>
 
