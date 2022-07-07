@@ -106,17 +106,12 @@
         <br />
 
         <form class="row g-3" id="formEmitirRelatório">
-          <div class="col-md-12">
-            <label for="filtros" class="form-label"
-              ><strong>Selecione os filtros disponíveis:</strong></label
-            >
-          </div>
                       
-              <div class="col-md-3">
+              <div class="col-md-2">
                 <label for="periodoInicial" class="form-label">Período Inicial</label>
                 <input class="form-control me-2" type="date" placeholder="Período Inicial" aria-label="Período Inicial">
               </div>
-              <div class="col-md-3">                  
+              <div class="col-md-2">                  
                 <label for="periodoFinal" class="form-label">Período Final</label>
                 <input class="form-control me-2" type="date" placeholder="Período Final" aria-label="Período Final">
               </div>   
@@ -131,8 +126,8 @@
             </select>
           </div>          
 
-          <div class="col-md-3">
-            <label for="selectBloco" class="form-label">Unidade Habitacional</label>
+          <div class="col-md-2">
+            <label for="selectBloco" class="form-label">Bloco</label>
             <select id="selectBloco" class="form-select">
               <option selected>Selecione o bloco</option>
               <option>Bloco 1</option>
@@ -152,7 +147,8 @@
             </select>
           </div>
 
-          <div class="col-12">
+          <div class="col-12">            
+            <button type="reset" class="btn btn-outline-secondary">Limpar</button>
             <button type="submit" class="btn btn-primary">
               Emitir relatório
             </button>
