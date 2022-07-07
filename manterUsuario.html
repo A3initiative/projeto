@@ -151,7 +151,7 @@
               <option value="Supervisor(a)">Supervisor(a)</option>
             </select>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-10">
             <label for="inputNomeUsuario" class="form-label"
               >Nome do(a) usuário(a)</label
             >
@@ -161,16 +161,6 @@
               id="inputNomeUsuario"
               aria-describedby="emailHelp"
             />
-          </div>
-          <div class="col-md-2" id="moradorResponsavel">
-            <label for="selectResponsavel" class="form-label"
-              >Morador(a) Responsável</label
-            >
-            <select id="selectResponsavel" class="form-select">
-              <option selected>Selecione</option>
-              <option value="sim">Sim</option>
-              <option value="nao">Não</option>
-            </select>
           </div>
           <div class="col-md-3">
             <label for="inputTelefoneUsuario" class="form-label"
@@ -203,7 +193,17 @@
             />
             <br />
           </div>
-          <div class="col-md-4" id="blocoMorador">
+          <div class="col-md-3" id="moradorResponsavel">
+            <label for="selectResponsavel" class="form-label"
+              >Morador(a) Responsável</label
+            >
+            <select id="selectResponsavel" class="form-select">
+              <option selected>Selecione</option>
+              <option value="sim">Sim</option>
+              <option value="nao">Não</option>
+            </select>
+          </div>
+          <div class="col-md-3" id="blocoMorador">
             <label for="selectBloco" class="form-label">Bloco</label>
             <select id="selectBloco" class="form-select">
               <option selected>Selecione o bloco</option>
@@ -231,7 +231,6 @@
             </select>
           </div>
           <div class="col-md-3">
-            <br />
             <label for="inputMatricula" class="form-label">Matrícula</label>
             <input
               type="text"
