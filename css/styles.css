@@ -81,3 +81,11 @@ header {
   background-color: black;
   color: white;
 }
+
+#moradorResponsavel,
+#blocoMorador,
+#andarMorador,
+#unidadeMorador,
+#matriculaMensageiro {
+  display: none;
+}

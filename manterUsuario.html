@@ -144,17 +144,29 @@
         <form class="row g-3" id="formManterUsuario">
           <div class="col-md-6">
             <label for="selectPerfil" class="form-label">Perfil</label>
-            <select id="selectPerfil" class="form-select">
+            <select
+              id="selectPerfil"
+              class="form-select"
+              onchange="exibeCampos()"
+            >
               <option selected>Selecione o perfil</option>
-              <option value="Morador(a)">Morador(a)</option>
-              <option value="Mensageiro(a)">Mensageiro(a)</option>
-              <option value="Supervisor(a)">Supervisor(a)</option>
+              <option value="Morador(a)" onchange="exibeCampos()">
+                Morador(a)
+              </option>
+              <option value="Mensageiro(a)" onchange="exibeCampos()">
+                Mensageiro(a)
+              </option>
+              <option value="Supervisor(a)" onchange="exibeCampos()">
+                Supervisor(a)
+              </option>
             </select>
           </div>
           <div class="col-md-10">
-            <label for="inputNomeUsuario" class="form-label"
-              >Nome do(a) usuário(a)</label
-            >
+            <label
+              for="inputNomeUsuario"
+              class="form-label"
+              id="tipoUsuario"
+            ></label>
             <input
               type="text"
               class="form-control"
@@ -212,7 +224,7 @@
               <option>Bloco 3</option>
             </select>
           </div>
-          <div class="col-md-3" id="andarblocoMorador">
+          <div class="col-md-3" id="andarMorador">
             <label for="selectBloco" class="form-label">Andar</label>
             <select id="selectBloco" class="form-select">
               <option selected>Selecione o andar</option>
@@ -230,7 +242,7 @@
               <option>Unidade C</option>
             </select>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" id="matriculaMensageiro">
             <label for="inputMatricula" class="form-label">Matrícula</label>
             <input
               type="text"
@@ -260,6 +272,7 @@
       <!-- Copyright -->
     </footer>
 
+    <script src="js/scripts.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
