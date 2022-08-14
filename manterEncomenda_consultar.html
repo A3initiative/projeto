@@ -22,7 +22,7 @@
           alt="imagem que representa a logomarca da empresa A3 Initiative Corporation"
           class="d-inline-block align-text-top"
         />
-        Olá, supervisor/mensageiro(a) [nome do usuário]!
+        Olá, supervisor(a) [nome do usuário]!
         <a href="">Sair</a>
       </div>
     </header>
@@ -82,8 +82,33 @@
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Gestão de Usuários</a>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLinkManterUsuario"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Gestão de usuários</a
+                  >
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLinkManterUsuario"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="#">Cadastrar usuário</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Consultar usuário</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Alterar usuário</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Excluir usuário</a>
+                    </li>
+                  </ul>
                 </li>
                 <li class="nav-item">
                   <a
@@ -115,29 +140,6 @@
         <h2 id="styleh2">Gestão de Encomendas | Consultar</h2>
 
         <br />
-
-        <div class="col-md-12">
-          <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="manterEncomenda_consultar.html"
-                >Consultar</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="manterEncomenda_registrar.html"
-                >Registrar</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Alterar</a>
-            </li>
-          </ul>
-        </div>
-
-        <br /><br />
 
         <form class="row g-3" id="formManterEncomenda">
           <div class="col-md-2">
